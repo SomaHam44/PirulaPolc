@@ -2,6 +2,7 @@ package com.example.pirulapolc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class beallitasok extends AppCompatActivity {
@@ -11,4 +12,11 @@ public class beallitasok extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beallitasok);
     }
+
+    btnIndito.setOnClickListener(view -> {
+        Intent beallitasokhoz = new Intent(MainActivity.this, beallitasok.class);
+        startActivity(beallitasokhoz);
+        finish();
+    });
+
 }
