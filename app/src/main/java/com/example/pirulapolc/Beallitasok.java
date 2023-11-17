@@ -38,7 +38,7 @@ public class Beallitasok extends AppCompatActivity {
             finish();
         });
 
-        btnVissza.setOnClickListener(view -> {
+        btnTovabb.setOnClickListener(view -> {
             Intent menure = new Intent(Beallitasok.this, Menu.class);
             startActivity(menure);
             finish();
