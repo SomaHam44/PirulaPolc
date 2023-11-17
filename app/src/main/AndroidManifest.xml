@@ -12,6 +12,24 @@
         android:theme="@style/Theme.PirulaPolc"
         tools:targetApi="31">
         <activity
+            android:name=".Figyelmezetesek"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VasarlasRogzitese"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Gyogyszereim"
             android:exported="true">
             <intent-filter>
