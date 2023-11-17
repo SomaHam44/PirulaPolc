@@ -68,8 +68,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/nev"
         app:layout_constraintEnd_toEndOf="@+id/beallitasok"
         app:layout_constraintStart_toEndOf="@+id/nev"
-        app:layout_constraintTop_toTopOf="@+id/nev"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintTop_toTopOf="@+id/nev"/>
 
     <EditText
         android:id="@+id/editTextSzulDatum"
