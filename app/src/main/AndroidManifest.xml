@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PirulaPolc"
         tools:targetApi="31">
         <activity
+            android:name=".beallitasok"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
