@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class beallitasok extends AppCompatActivity {
+public class Beallitasok extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
