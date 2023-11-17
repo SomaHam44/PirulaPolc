@@ -2,8 +2,48 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
 
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="575dp"
+        android:gravity="center"
+        android:text="Menü"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#950536"
+        android:textColorLink="#3F6AB5"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
+        android:text="Figyelmeztetések"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="323dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
