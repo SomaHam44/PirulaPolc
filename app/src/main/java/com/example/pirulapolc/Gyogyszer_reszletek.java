@@ -5,44 +5,41 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.DatePicker;
 import android.widget.EditText;
 
-public class Beallitasok extends AppCompatActivity {
-
-    private Button btnVissza;
-
-    private Button btnTovabb;
+public class Gyogyszer_reszletek extends AppCompatActivity {
 
     private EditText editTextNev;
 
-    private DatePicker editTextSzulDatum;
+    private EditText editTaxtHatoanyag;
 
     private EditText editTextTajSzam;
 
-    private CheckBox checkboxRendszeresSzedes;
+    private EditText editTextNumber;
 
     private androidx.recyclerview.widget.RecyclerView idopontLista;
 
+    private Button btnMentes;
 
-
+    private Button btnVissza;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beallitasok);
+        setContentView(R.layout.activity_gyogyszer_reszletek);
 
-        btnVissza.setOnClickListener(view -> {
-            Intent fooldalra = new Intent(Beallitasok.this, MainActivity.class);
+        btnMentes.setOnClickListener(view -> {
+            //Mentés??
+            Intent fooldalra = new Intent(Gyogyszer_reszletek.this, Gyogyszereim.class);
             startActivity(fooldalra);
             finish();
         });
 
-        btnTovabb.setOnClickListener(view -> {
-            Intent menure = new Intent(Beallitasok.this, Menu.class);
+        btnVissza.setOnClickListener(view -> {
+            Intent menure = new Intent(Gyogyszer_reszletek.this, Gyogyszereim.class);
             startActivity(menure);
             finish();
         });
+
     }
 }

@@ -71,14 +71,14 @@
         app:layout_constraintStart_toEndOf="@+id/nev"
         app:layout_constraintTop_toTopOf="@+id/nev"/>
 
-    <EditText
+    <DatePicker
         android:id="@+id/editTextSzulDatum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="181dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:inputType="date"
         android:hint="Születési dátum"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="@+id/szuletesiDatum"
         app:layout_constraintStart_toEndOf="@+id/szuletesiDatum"
         app:layout_constraintTop_toTopOf="@+id/szuletesiDatum" />
