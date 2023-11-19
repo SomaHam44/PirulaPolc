@@ -12,6 +12,12 @@
         android:theme="@style/Theme.PirulaPolc"
         tools:targetApi="31">
         <activity
+            android:name=".GyogyszerBevetel"
+            android:exported="false" />
+        <activity
+            android:name=".GyogyszertarKeres"
+            android:exported="false" />
+        <activity
             android:name=".Gyogyszer_reszletek"
             android:exported="false" />
         <activity

@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
-
     <TextView
-        android:id="@+id/menu"
+        android:id="@+id/cim"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="140dp"
@@ -26,24 +25,80 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnFigyelmeztetesek"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="Figyelmeztetések"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu" />
-
+        app:layout_constraintTop_toBottomOf="@+id/cim" />
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnGyogyszereim"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Gyógyszereim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFigyelmeztetesek" />
+    <Button
+        android:id="@+id/btnVasarlasRogzitese"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Vásárlás rögzítése"
+        app:layout_constraintEnd_toEndOf="@+id/btnGyogyszereim"
+        app:layout_constraintStart_toStartOf="@+id/btnGyogyszereim"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyogyszereim" />
+    <Button
+        android:id="@+id/btnGyogyszerHozzaad"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Új gyógyszer hozzáad"
+        app:layout_constraintEnd_toEndOf="@+id/btnVasarlasRogzitese"
+        app:layout_constraintStart_toStartOf="@+id/btnVasarlasRogzitese"
+        app:layout_constraintTop_toBottomOf="@+id/btnVasarlasRogzitese" />
+    <Button
+        android:id="@+id/btnGyogyszertarKereses"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gyógyszertár keresés"
+        app:layout_constraintEnd_toEndOf="@+id/btnGyogyszerHozzaad"
+        app:layout_constraintStart_toStartOf="@+id/btnGyogyszerHozzaad"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyogyszerHozzaad" />
+    <Button
+        android:id="@+id/btnGyogyszerbevetel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gyógyszer bevétel"
+        app:layout_constraintEnd_toEndOf="@+id/btnGyogyszertarKereses"
+        app:layout_constraintStart_toStartOf="@+id/btnGyogyszertarKereses"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyogyszertarKereses" />
+    <ImageButton
+        android:id="@+id/btnBeallitasok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="323dp" />
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+    <Button
+        android:id="@+id/btnVissza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Vissza"
+        app:layout_constraintEnd_toEndOf="@+id/btnGyogyszerbevetel"
+        app:layout_constraintStart_toStartOf="@+id/btnGyogyszerbevetel"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyogyszerbevetel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
