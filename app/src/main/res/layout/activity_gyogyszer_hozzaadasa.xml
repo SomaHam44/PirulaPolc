@@ -11,7 +11,7 @@
         android:id="@+id/cim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gógyszer hozzáadása"
+        android:text="Gyógyszer hozzáadása"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -162,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="CheckBox"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/rendszeres"
         app:layout_constraintStart_toEndOf="@+id/rendszeres"
         app:layout_constraintTop_toTopOf="@+id/rendszeres" />
