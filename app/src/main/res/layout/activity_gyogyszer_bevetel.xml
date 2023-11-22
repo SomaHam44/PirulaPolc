@@ -6,4 +6,166 @@
     android:layout_height="match_parent"
     tools:context=".GyogyszerBevetel">
 
+    <TextView
+        android:id="@+id/cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyógyszer bevétel"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/datum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Dátum:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cim" />
+
+
+
+    <TextView
+        android:id="@+id/hatoanyag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hatóanyag:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/datum"
+        app:layout_constraintTop_toBottomOf="@+id/datum" />
+
+    <TextView
+        android:id="@+id/rendszeres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rendszeresen szedem:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/hatoanyag"
+        app:layout_constraintTop_toBottomOf="@+id/hatoanyag" />
+
+    <TextView
+        android:id="@+id/kezdoKeszlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aktuális készlet (db):"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rendszeres"
+        app:layout_constraintTop_toBottomOf="@+id/rendszeres" />
+
+
+    <TextView
+        android:id="@+id/hanyNapra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hány napra elég:"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/kezdoKeszlet"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNev"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Név"
+        app:layout_constraintBottom_toBottomOf="@+id/datum"
+        app:layout_constraintEnd_toEndOf="@+id/cim"
+        app:layout_constraintStart_toEndOf="@+id/datum"
+        app:layout_constraintTop_toTopOf="@+id/datum"/>
+
+    <EditText
+        android:id="@+id/editTextHatoanyag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Hatóanyag"
+        app:layout_constraintBottom_toBottomOf="@+id/hatoanyag"
+        app:layout_constraintStart_toEndOf="@+id/hatoanyag"
+        app:layout_constraintTop_toTopOf="@+id/hatoanyag" />
+
+    <EditText
+        android:id="@+id/editTextTajSzam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="8"
+        android:hint="TAJ szám"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/rendszeres"
+        app:layout_constraintStart_toEndOf="@+id/rendszeres"
+        app:layout_constraintTop_toTopOf="@+id/rendszeres"/>
+
+    <TextView
+        android:id="@+id/idopontok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Adagolás:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/kezdoKeszlet"
+        app:layout_constraintTop_toBottomOf="@+id/hanyNapra" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idopontLista"
+        android:layout_width="351dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/idopontok"
+        app:layout_constraintTop_toBottomOf="@+id/idopontok" />
+
+    <Button
+        android:id="@+id/btnTovabb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentés"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVissza"
+        app:layout_constraintEnd_toEndOf="@+id/idopontLista"
+        app:layout_constraintTop_toTopOf="@+id/btnVissza"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnVissza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Vissza"
+        app:layout_constraintStart_toStartOf="@+id/idopontLista"
+        app:layout_constraintTop_toBottomOf="@+id/idopontLista" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/kezdoKeszlet"
+        app:layout_constraintStart_toEndOf="@+id/kezdoKeszlet"
+        app:layout_constraintTop_toTopOf="@+id/kezdoKeszlet" />
+
+    <EditText
+        android:id="@+id/editTextLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="link"
+        app:layout_constraintBottom_toBottomOf="@+id/hanyNapra"
+        app:layout_constraintTop_toTopOf="@+id/hanyNapra"
+        tools:layout_editor_absoluteX="210dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,7 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        init();
         btnFigyelmeztetesek.setOnClickListener(view -> {
             Intent figyelmeztetesekre = new Intent(Menu.this, Figyelmezetesek.class);
             startActivity(figyelmeztetesekre);
@@ -52,5 +53,15 @@ public class Menu extends AppCompatActivity {
             startActivity(beallitasokra);
             finish();
         });
+    }
+
+    private void init() {
+        btnFigyelmeztetesek = findViewById(R.id.btnFigyelmeztetesek);
+        btnGyogyszereim = findViewById(R.id.btnGyogyszereim);
+        btnVasarlasRogzitese = findViewById(R.id.btnVasarlasRogzitese);
+        btnGyogyszerHozzaad = findViewById(R.id.btnGyogyszerHozzaad);
+        btnGyogyszertarKereses = findViewById(R.id.btnGyogyszertarKereses);
+        btnGyogyszerBevetel = findViewById(R.id.btnGyogyszerbevetel);
+        btnVissza = findViewById(R.id.btnVissza);
     }
 }

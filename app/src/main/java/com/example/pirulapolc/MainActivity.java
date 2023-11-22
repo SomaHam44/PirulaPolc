@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnIndito;
-    private TextView alkalmazasNeve;
-    private TextView bevezetoSzoveg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,5 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         btnIndito = findViewById(R.id.btnIndito);
-        alkalmazasNeve = findViewById(R.id.alkalmazasNeve);
-        bevezetoSzoveg = findViewById(R.id.bevezetoSzoveg);
     }
 }

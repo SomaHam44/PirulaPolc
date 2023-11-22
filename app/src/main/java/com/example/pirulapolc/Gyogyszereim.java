@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Gyogyszereim extends AppCompatActivity {
-    private TextView textViewGyogyszereim;
     private RecyclerView rvGyogyszerLista;
 
     private Button btnVissza;
+    private Button btnHozzaad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,8 @@ public class Gyogyszereim extends AppCompatActivity {
     }
 
     private void init() {
-        textViewGyogyszereim = findViewById(R.id.gyogyszereim);
         rvGyogyszerLista = findViewById(R.id.gyogyszerLista);
+        btnVissza = findViewById(R.id.btnVissza);
+        btnHozzaad = findViewById(R.id.btnHozzaad);
     }
 }

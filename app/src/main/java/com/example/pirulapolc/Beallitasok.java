@@ -44,5 +44,6 @@ public class Beallitasok extends AppCompatActivity {
             startActivity(menure);
             finish();
         });
+
     }
 }
