@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="@+id/figyelmeztetesek"
         app:layout_constraintTop_toBottomOf="@+id/figyelmeztetesek" />
     <Button
-        android:id="@+id/btnVissza"
+        android:id="@+id/btnVisszater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gyógyszertár keresése"
-        app:layout_constraintBottom_toBottomOf="@+id/btnVissza"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVisszater"
         app:layout_constraintEnd_toEndOf="@+id/figyelmeztetesekLista"
         app:layout_constraintTop_toTopOf="@+id/btnVissza"
         app:layout_constraintVertical_bias="1.0" />

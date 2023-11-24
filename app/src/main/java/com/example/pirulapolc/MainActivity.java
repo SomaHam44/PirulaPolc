@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         init();
 
         btnIndito.setOnClickListener(view -> {
-            Intent beallitasokhoz = new Intent(MainActivity.this, Beallitasok.class);
+            Intent beallitasokhoz = new Intent(MainActivity.this, BeallitasokFragment.class);
             startActivity(beallitasokhoz);
             finish();
         });

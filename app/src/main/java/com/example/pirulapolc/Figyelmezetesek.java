@@ -30,7 +30,7 @@ public class Figyelmezetesek extends AppCompatActivity {
     private void init() {
         textViewFigyelmeztetesek = findViewById(R.id.figyelmeztetesek);
         rvFigyelmeztetesekLista = findViewById(R.id.figyelmeztetesekLista);
-        btnVissza = findViewById(R.id.btnVissza);
+        btnVissza = findViewById(R.id.btnVisszater);
         btnGyogyszertarKeresohoz = findViewById(R.id.btnGyogyszertarKeresohoz);
     }
 }
